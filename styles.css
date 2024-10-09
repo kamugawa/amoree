@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121212; /* Fundo preto */
+    color: #f5f5f5; /* Cor de texto clara */
+    text-align: center;
+}
+
+/* Estilização da área de conteúdo */
+#home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f1f1f; /* Caixa de conteúdo cinza escuro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Sombra dramática */
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff; /* Título branco */
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.1), 0 0 20px #6a6a6a; /* Sombra dupla suave */
+    letter-spacing: 2px; /* Espaçamento das letras */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover {
+    color: #e74c3c; /* Efeito hover - vermelho */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    border-radius: 50%;
+border: solid rgb(0, 0, 0) 2px;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
+}
+
+.menu {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333; /* Fundo preto/cinza escuro */
+    color: #ffffff; /* Texto branco */
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 300;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7); /* Sombra */
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    img {
+        width: 150px;
+        height: 150;
+    }
+
+    #home .content {
+        padding: 20px;
+    }
+}
